@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript</title>
+	</head>
+	<body>
+
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="about.html">About us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<script>
+			var navigation = document.querySelectorAll('nav ul li a'),
+				navigationLength = navigation.length;
+
+			if(navigationLength) {
+				for(var x = 0; x < navigationLength; x = x + 1) {
+					var i = navigation[x];
+					console.log(i.text + ' - ' + i.getAttribute('href'));
+				}
+			}
+		</script>
+	</body>
+</html>

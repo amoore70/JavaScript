@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript</title>
+	</head>
+	<body>
+
+		<div id="box">I am a box</div>
+
+		<script>
+			var box = document.getElementById('box'),
+				boxStyle = box.style;
+
+			// Set using an attribute
+			box.setAttribute('style', 'width:100px;height:100px;background-color:slategrey;');
+
+			// Set individual properties
+			boxStyle.width = '100px';
+			boxStyle.height = '100px';
+			boxStyle.backgroundColor = 'slategrey';
+			boxStyle.padding = '10px';
+			boxStyle.color = '#fff';
+			boxStyle.border = '1px solid #000';
+
+			// Event handler
+			box.onclick = function() {
+				boxStyle.backgroundColor = 'red';
+			}
+		</script>
+	</body>
+</html>

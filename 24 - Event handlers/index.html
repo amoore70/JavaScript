@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript</title>
+	</head>
+	<body>
+
+		<a href="#" id="link">Click me</a>
+
+		<script>
+			var element = document.getElementById('link');
+			
+			/*
+			element.addEventListener('click', function() {
+				console.log('Clicked.');
+			});
+			*/
+
+			// Only works in IE versions IE8 and lower
+			element.attachEvent('onclick', function() {
+				console.log('Clicked.');
+			});
+
+		</script>
+	</body>
+</html>
